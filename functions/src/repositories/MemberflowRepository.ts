@@ -10,7 +10,7 @@ class MemberflowRepository {
 	 * Creates a new day entry within the discord/memberflow/days collection.
 	 * @param {string} date | The date that the data relates to.
 	 * @param {MemberflowObject} data | The data to save to Firestore.
-	 * @returns {Promise<WriteResult>
+	 * @returns {Promise<WriteResult>}
 	 */
 	async create(date: string, data: MemberflowObject) {
 		const formattedDate = new Date(date).toISOString();
